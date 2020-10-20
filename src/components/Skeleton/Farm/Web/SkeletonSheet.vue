@@ -1,7 +1,6 @@
 <template>
   <div>
     <v-sheet
-      color="red"
       width="404"
       height="566"
       tile
@@ -15,7 +14,6 @@
     </v-sheet>
 
     <v-sheet
-      color="red"
       width="404"
       height="316"
       tile

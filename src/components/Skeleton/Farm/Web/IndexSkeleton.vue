@@ -1,5 +1,5 @@
 <template>
-  <v-row no-gutters>
+  <v-row>
     <v-col>
       <skeleton-sheet></skeleton-sheet>
     </v-col>
