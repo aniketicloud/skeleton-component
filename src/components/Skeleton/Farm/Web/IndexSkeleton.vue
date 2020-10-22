@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <v-row dense>
-      <v-col cols="12" sm="6" md="4" lg="4">
+    <v-row >
+      <v-col cols="12" sm="6" md="4">
         <skeleton-sheet></skeleton-sheet>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="4">
+      <v-col cols="12" sm="6" md="4">
         <skeleton-sheet></skeleton-sheet>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="4">
+      <v-col cols="12" sm="6" md="4">
         <skeleton-sheet></skeleton-sheet>
       </v-col>
     </v-row>
