@@ -1,40 +1,74 @@
 <template>
   <div>
-    <v-sheet
-      color="red"
-      width="404"
-      height="566"
-      tile
-      class="mb-8 hidden-sm-and-down"
-    >
-      <header-skeleton></header-skeleton>
-      <text-skeleton></text-skeleton>
-      <text-skeleton></text-skeleton>
-      <text-skeleton></text-skeleton>
-      <text-skeleton></text-skeleton>
+    <!-- Mobile view -->
+    <v-sheet height="318" class="d-sm-none mx-4">
+      <v-row>
+        <v-col>
+          <heading-skeleton></heading-skeleton>
+          <div>
+            <text-skeleton></text-skeleton>
+            <text-skeleton></text-skeleton>
+          </div>
+          <div>
+            <text-skeleton></text-skeleton>
+            <text-skeleton></text-skeleton>
+          </div>
+        </v-col>
+      </v-row>
     </v-sheet>
 
-    <v-sheet
-      color="red"
-      width="404"
-      height="316"
-      tile
-      class="mb-8 hidden-sm-and-down"
-    >
-      <header-skeleton></header-skeleton>
-      <text-skeleton></text-skeleton>
-      <text-skeleton></text-skeleton>
-    </v-sheet>
+    <!-- Desktop View -->
+    <div>
+      <v-sheet height="566" class="d-none d-sm-flex mx-4">
+        <v-row dense>
+          <v-col>
+            <heading-skeleton></heading-skeleton>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+          </v-col>
+        </v-row>
+      </v-sheet>
+
+      <v-sheet height="316" class="d-none d-sm-flex mx-4">
+        <v-row>
+          <v-col>
+            <heading-skeleton></heading-skeleton>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+            <div class="mb-4">
+              <text-skeleton></text-skeleton>
+              <text-skeleton></text-skeleton>
+            </div>
+          </v-col>
+        </v-row>
+      </v-sheet>
+    </div>
   </div>
 </template>
 
 <script>
 import TextSkeleton from "./TextSkeleton";
-import HeaderSkeleton from "./HeaderSkeleton";
+import HeadingSkeleton from "./HeadingSkeleton";
 export default {
   components: {
     TextSkeleton,
-    HeaderSkeleton,
+    HeadingSkeleton,
   },
 };
 </script>
